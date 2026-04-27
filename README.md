@@ -1,6 +1,6 @@
-# 🧠 Customer Intelligence & Sales Insights Platform (Snowflake)
+# Customer Intelligence & Sales Insights Platform (Snowflake)
 
-## 📌 Overview
+##  Overview
 
 This project builds a scalable **data pipeline and analytics platform** using Snowflake to help retail businesses:
 
@@ -12,7 +12,7 @@ The system processes data from multiple sources and generates actionable insight
 
 ---
 
-## 🚀 Architecture
+##  Architecture
 
 ```
 S3 → Snowpipe → RAW → Streams → VALIDATED → CURATED → DATA MART → KPIs → Alerts
@@ -38,15 +38,15 @@ S3 → Snowpipe → RAW → Streams → VALIDATED → CURATED → DATA MART → 
 
 ---
 
-## 🏗️ Data Model (Curated Layer)
+##  Data Model (Curated Layer)
 
-### ⭐ Dimension Tables
+###  Dimension Tables
 
 * `dim_customer` → SCD Type 2 (tracks history)
 * `dim_product` → SCD Type 2
 * `dim_date` → Time-based analysis
 
-### ⭐ Fact Tables
+###  Fact Tables
 
 * `fact_sales` → Transaction data
 * `fact_customer_activity` → User behavior
@@ -54,7 +54,7 @@ S3 → Snowpipe → RAW → Streams → VALIDATED → CURATED → DATA MART → 
 
 ---
 
-## 🔄 Pipeline Flow
+## Pipeline Flow
 
 1. Data ingestion from S3 using Snowpipe
 2. Change tracking using Streams
@@ -67,18 +67,18 @@ S3 → Snowpipe → RAW → Streams → VALIDATED → CURATED → DATA MART → 
 
 ---
 
-## 📊 Key Features
+##  Key Features
 
-* ✅ Customer 360 view
-* ✅ Customer segmentation (High / Medium / Low value)
-* ✅ Churn detection
-* ✅ Sales trend analysis
-* ✅ Automated pipeline using Tasks
-* ✅ Real-time change tracking with Streams
+* Customer 360 view
+* Customer segmentation (High / Medium / Low value)
+* Churn detection
+* Sales trend analysis
+* Automated pipeline using Tasks
+* Real-time change tracking with Streams
 
 ---
 
-## 📈 Sample Insights
+##  Sample Insights
 
 * Top customers by revenue
 * Monthly sales trends
@@ -87,7 +87,7 @@ S3 → Snowpipe → RAW → Streams → VALIDATED → CURATED → DATA MART → 
 
 ---
 
-## ⚙️ Technologies Used
+##  Technologies Used
 
 * Snowflake (Data Warehouse)
 * SQL
@@ -97,32 +97,9 @@ S3 → Snowpipe → RAW → Streams → VALIDATED → CURATED → DATA MART → 
 
 ---
 
-## 🔥 How to Run
 
-1. Create database and schema
-2. Load raw data into Snowflake
-3. Run validation procedures
-4. Execute transformation scripts
-5. Query data mart for insights
 
----
 
-## 👤 Author
-
-**Siva Sankar Reddy**
-Computer Science Engineering
-SIMATS
-
----
-
-## 📌 Future Enhancements
-
-* Machine Learning for recommendations
-* Real-time dashboards (Power BI / Tableau)
-* Advanced anomaly detection
-
----
-
-## ⭐ Conclusion
+## Conclusion
 
 This project demonstrates how Snowflake can be used to build a **modern, scalable, and automated data pipeline** for real-time analytics and business intelligence.
